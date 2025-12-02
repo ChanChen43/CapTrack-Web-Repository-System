@@ -55,7 +55,7 @@
       },
       "scripts": {
           "dev": "vite",
-          "build": "tsc && vite build",
+          "build": "vite build",
           "deploy": "npm run build && gh-pages -d dist"
       }
   }
