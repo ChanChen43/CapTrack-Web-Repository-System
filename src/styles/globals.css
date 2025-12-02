@@ -1,0 +1,348 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* University of Cebu Brand Colors - 60-30-10 Rule */
+  /* 60% White (backgrounds, dominant), 30% Blue (primary brand), 10% Gold (accents) */
+  
+  --font-size: 16px;
+  
+  /* University of Cebu Color Palette */
+  --uc-blue: #1e40af;
+  --uc-blue-light: #3b82f6;
+  --uc-blue-dark: #1e3a8a;
+  --uc-gold: #f59e0b;
+  --uc-gold-light: #fbbf24;
+  --uc-gold-dark: #d97706;
+  --uc-white: #ffffff;
+  --uc-gray-50: #f8fafc;
+  --uc-gray-100: #f1f5f9;
+  --uc-gray-200: #e2e8f0;
+  --uc-gray-300: #cbd5e1;
+  --uc-gray-400: #94a3b8;
+  --uc-gray-500: #64748b;
+  --uc-gray-600: #475569;
+  --uc-gray-700: #334155;
+  --uc-gray-800: #1e293b;
+  --uc-gray-900: #0f172a;
+  
+  /* UC Gradients as variables */
+  --gradient-uc-primary: linear-gradient(135deg, var(--uc-blue) 0%, var(--uc-blue-dark) 100%);
+  --gradient-uc-accent: linear-gradient(135deg, var(--uc-gold-light) 0%, var(--uc-gold) 100%);
+  
+  /* 60% - White/Light backgrounds (dominant) */
+  --background: var(--uc-white);
+  --card: var(--uc-white);
+  --popover: var(--uc-white);
+  --input-background: var(--uc-gray-50);
+  --muted: var(--uc-gray-100);
+  --secondary: var(--uc-gray-100);
+  --sidebar: var(--uc-gray-50);
+  --sidebar-accent: var(--uc-gray-100);
+  
+  /* 30% - Blue (primary brand color) */
+  --primary: var(--uc-blue);
+  --primary-foreground: var(--uc-white);
+  --sidebar-primary: var(--uc-blue);
+  --sidebar-primary-foreground: var(--uc-white);
+  
+  /* 10% - Gold (accent color) */
+  --accent: var(--uc-gold);
+  --accent-foreground: var(--uc-white);
+  --ring: var(--uc-gold);
+  --sidebar-ring: var(--uc-gold);
+  
+  /* Text colors */
+  --foreground: var(--uc-gray-900);
+  --card-foreground: var(--uc-gray-900);
+  --popover-foreground: var(--uc-gray-900);
+  --secondary-foreground: var(--uc-gray-900);
+  --muted-foreground: var(--uc-gray-600);
+  --sidebar-foreground: var(--uc-gray-900);
+  --sidebar-accent-foreground: var(--uc-gray-700);
+  
+  /* Borders and UI elements */
+  --border: var(--uc-gray-200);
+  --input: transparent;
+  --switch-background: var(--uc-gray-300);
+  --sidebar-border: var(--uc-gray-200);
+  
+  /* Utility colors */
+  --destructive: #dc2626;
+  --destructive-foreground: var(--uc-white);
+  
+  /* Typography */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  
+  /* Chart colors using UC theme */
+  --chart-1: var(--uc-blue);
+  --chart-2: var(--uc-gold);
+  --chart-3: var(--uc-blue-light);
+  --chart-4: var(--uc-gold-light);
+  --chart-5: var(--uc-blue-dark);
+  
+  --radius: 0.625rem;
+}
+
+.dark {
+  /* Dark mode with University of Cebu colors - maintains 60-30-10 rule */
+  
+  /* 60% - Dark backgrounds (dominant) */
+  --background: var(--uc-gray-900);
+  --card: var(--uc-gray-800);
+  --popover: var(--uc-gray-800);
+  --input-background: var(--uc-gray-700);
+  --muted: var(--uc-gray-700);
+  --secondary: var(--uc-gray-700);
+  --sidebar: var(--uc-gray-800);
+  --sidebar-accent: var(--uc-gray-700);
+  
+  /* 30% - Blue (primary brand color) - lighter in dark mode */
+  --primary: var(--uc-blue-light);
+  --primary-foreground: var(--uc-white);
+  --sidebar-primary: var(--uc-blue-light);
+  --sidebar-primary-foreground: var(--uc-white);
+  
+  /* 10% - Gold (accent color) */
+  --accent: var(--uc-gold-light);
+  --accent-foreground: var(--uc-gray-900);
+  --ring: var(--uc-gold-light);
+  --sidebar-ring: var(--uc-gold-light);
+  
+  /* Text colors */
+  --foreground: var(--uc-white);
+  --card-foreground: var(--uc-white);
+  --popover-foreground: var(--uc-white);
+  --secondary-foreground: var(--uc-white);
+  --muted-foreground: var(--uc-gray-400);
+  --sidebar-foreground: var(--uc-white);
+  --sidebar-accent-foreground: var(--uc-gray-200);
+  
+  /* Borders and UI elements */
+  --border: var(--uc-gray-600);
+  --input: var(--uc-gray-700);
+  --switch-background: var(--uc-gray-600);
+  --sidebar-border: var(--uc-gray-600);
+  
+  /* Utility colors */
+  --destructive: #ef4444;
+  --destructive-foreground: var(--uc-white);
+  
+  /* Typography - same as light mode */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  
+  /* Chart colors for dark mode */
+  --chart-1: var(--uc-blue-light);
+  --chart-2: var(--uc-gold-light);
+  --chart-3: var(--uc-blue);
+  --chart-4: var(--uc-gold);
+  --chart-5: var(--uc-blue-dark);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* University of Cebu Custom Utilities */
+@layer utilities {
+  /* UC Brand Colors */
+  .bg-uc-blue { background-color: var(--uc-blue); }
+  .bg-uc-blue-light { background-color: var(--uc-blue-light); }
+  .bg-uc-blue-dark { background-color: var(--uc-blue-dark); }
+  .bg-uc-gold { background-color: var(--uc-gold); }
+  .bg-uc-gold-light { background-color: var(--uc-gold-light); }
+  .bg-uc-gold-dark { background-color: var(--uc-gold-dark); }
+  
+  .text-uc-blue { color: var(--uc-blue); }
+  .text-uc-blue-light { color: var(--uc-blue-light); }
+  .text-uc-blue-dark { color: var(--uc-blue-dark); }
+  .text-uc-gold { color: var(--uc-gold); }
+  .text-uc-gold-light { color: var(--uc-gold-light); }
+  .text-uc-gold-dark { color: var(--uc-gold-dark); }
+  
+  .border-uc-blue { border-color: var(--uc-blue); }
+  .border-uc-gold { border-color: var(--uc-gold); }
+  
+  /* UC Gradient Utilities - Using standard gradient approach */
+  .gradient-uc-primary {
+    background: var(--gradient-uc-primary);
+  }
+  
+  .gradient-uc-accent {
+    background: var(--gradient-uc-accent);
+  }
+  
+  /* Tailwind-friendly gradient utilities */
+  .bg-gradient-to-r.from-uc-blue.to-uc-blue-dark {
+    background: var(--gradient-uc-primary);
+  }
+  
+  .bg-gradient-to-r.from-uc-gold-light.to-uc-gold {
+    background: var(--gradient-uc-accent);
+  }
+  
+  /* UC Theme specific shadows */
+  .shadow-uc-blue {
+    box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
+  }
+  
+  .shadow-uc-gold {
+    box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.1), 0 2px 4px -1px rgba(245, 158, 11, 0.06);
+  }
+  
+  /* UC hover effects */
+  .hover-uc-blue:hover {
+    background-color: rgba(30, 64, 175, 0.05);
+    border-color: var(--uc-blue);
+  }
+  
+  .hover-uc-gold:hover {
+    background-color: rgba(245, 158, 11, 0.05);
+    border-color: var(--uc-gold);
+  }
+  
+  /* UC Admin specific styles */
+  .admin-card-gradient {
+    background: linear-gradient(135deg, var(--uc-white) 0%, var(--uc-gray-50) 100%);
+    border: 1px solid rgba(30, 64, 175, 0.1);
+  }
+  
+  .admin-header-gradient {
+    background: linear-gradient(135deg, var(--uc-blue) 0%, var(--uc-blue-dark) 100%);
+  }
+  
+  /* Role-based styling */
+  .role-admin { 
+    background: linear-gradient(135deg, var(--uc-gold-light) 0%, var(--uc-gold) 100%);
+    color: white;
+  }
+  
+  .role-faculty { 
+    background-color: var(--uc-blue);
+    color: white;
+  }
+  
+  .role-student { 
+    background-color: var(--uc-gray-100);
+    color: var(--uc-gray-800);
+  }
+}
