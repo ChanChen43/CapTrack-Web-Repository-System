@@ -7,7 +7,7 @@
 
   export default defineConfig({
     plugins: [react()],
-    base: './CapTrack-Web-Repository-System/',
+    base: '/CapTrack-Web-Repository-System/',
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
